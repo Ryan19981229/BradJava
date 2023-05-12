@@ -16,6 +16,9 @@ public class Brad51讀取檔案String用法 {
 			int c;
 			while((c= fin.read(buf)) != -1) {
 				System.out.print(new String(buf,0,c)); 
+				//buf 是指要轉換的字节数组。
+				//0 是指開始轉換的索引位置。
+				//c 是指要轉換的字符數量。
 				System.out.println((char)c); //強制轉型成字元，不然他是回傳Ascii code
 				int b = fin.read();
 				System.out.println((char)b); //強制轉型成字元，不然他是回傳Ascii code

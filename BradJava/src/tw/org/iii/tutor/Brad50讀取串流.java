@@ -2,6 +2,7 @@ package tw.org.iii.tutor;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class Brad50讀取串流{
@@ -9,6 +10,7 @@ public class Brad50讀取串流{
 	public static void main(String[] args) {
 		try {
 			FileInputStream fin = new FileInputStream("dir1/file1.txt");
+			//***主要用於讀取二進制數據，它將文件中的每個字節讀取到一個 byte 數組中，因此可以讀取包括文本文件在內的任何類型的文件。***
 			//建立串流
 			int c ;//這邊一定要用int因為tead只能讀int
 			while((c= fin.read()) != -1) {

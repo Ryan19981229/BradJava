@@ -1,10 +1,5 @@
-<%@page import="tw.brad.classes.Bike"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%
-	Bike b1 = (Bike)request.getAttribute("bike1");
-	b1.upSpeed();
-%>    
 <!DOCTYPE html>
 <html>
 	<head>
@@ -12,11 +7,10 @@
 		<title>Brad Big Company</title>
 	</head>
 	<body>
-		I am 40<hr />
-		<%= b1 %>
-		<br>
-		<%out.print(b1); %><%out.print(b1); %>
-		<br>
+		<form action="brad44.jsp">
+			Account: <input type="text" name="account" /><br />
+			Email: <input type="text" name="email" /><br />
+			<input type="submit" value="OK" /><br />
+		</form>
 	</body>
 </html>
-
